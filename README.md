@@ -1,17 +1,8 @@
----
-title: 'Project documentation template'
-disqus: hackmd
----
-
 LeakShow
 ===
 ![downloads](https://img.shields.io/github/downloads/atom/atom/total.svg)
 ![build](https://img.shields.io/appveyor/ci/:user/:repo.svg)
 ![chat](https://img.shields.io/discord/:serverId.svg)
-
-## Table of Contents
-
-[TOC]
 
 ## Banner
 
@@ -68,13 +59,6 @@ python3 leakshow.py -d DOMAIN.COM
 *Consult Person*
 ```
 python3 leakshow.py -n NAME
-```
-
-Tool Flows
----
-```sequence
-YOU->DeepWeb: request
-DeepWeb->YOU: response
 ```
 
 ## Appendix and FAQ

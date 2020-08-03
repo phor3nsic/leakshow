@@ -40,7 +40,7 @@ sudo systemctl start tor
 
  - Clone the repository:  
 ```
-git clone REPO
+git clone https://github.com/phor3nsic/leakshow.git
 cd leakshow
 ```
 

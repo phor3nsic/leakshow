@@ -33,9 +33,6 @@ def checkConection():
 		req = SESSION.get(URL)
 		if req.status_code == 200:
 			pass
-		else:
-			print("[!] Start Tor Services!")
-			sys.exit()
 	except:
 		print("[!] Start Tor Services!")
 		sys.exit()
@@ -51,6 +48,8 @@ def verifyParamethers():
 def consultLeak(payload):
 	req = SESSION.post(URL, data=payload)
 	soup = BeautifulSoup(req.text, 'html.parser')
+
+	#output treatment
 	pre = str(soup.find_all('pre'))
 	pre = pre.replace("\n","").replace("Array","").replace(" ","")
 	pre = pre.replace("<pre>","").replace("</pre>","")
